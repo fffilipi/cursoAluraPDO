@@ -39,3 +39,10 @@ A resolver esse problema, utilizando Prepared Statements
 Que prepared statements podem inclusive ajudar na performance da aplicação
 As diferenças entre bindValue e bindParam para vincular parâmetros aos prepared statements
 Que podemos informar o tipo de dado que estamos passando através do PDO, utilizando o terceiro parâmetro de bindValue e bindParam
+
+As boas práticas e padrões de projeto com orientação a objetos
+O padrão Entity e vimos que ele já está sendo aplicado em nosso projeto
+O padrão Creation Method, que cria uma conexão, de forma que não precisemos repetir esse código pela aplicação
+O padrão Repository, que permite extrair a lógica de persistência para uma classe específica
+A abstrair a implementação de um repository, através de uma interface, para podermos trocar a implementação no futuro, caso seja necessário
+O conceito de injeção de dependências e suas diversas vantagens no desenvolvimento
