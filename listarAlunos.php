@@ -7,7 +7,7 @@ $databasePath = __DIR__ . '/banco.sqlite';
 $pdo = new PDO('sqlite:' . $databasePath);
 
 $statement = $pdo->query('SELECT * FROM students;');
-$studentDataList = $statement->fetchAll(fetch_style: PDO::FETCH_ASSOC);
+$studentDataList = $statement->fetchAll(PDO::FETCH_ASSOC);
 $studentList = [];
 
 foreach ($studentDataList as $studentData) {
