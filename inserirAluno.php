@@ -14,7 +14,6 @@ $sqlInsert = "INSERT INTO students (name, birth_date) VALUES (?, ?);";
 $statement = $pdo->prepare($sqlInsert);
 $statement->bindValue(1, $student->name());
 $statement->bindValue(2, $student->birthDate()->format(format:'Y-m-d'));
-
 if ($statement->execute()) {
     echo "Aluno incluído";
 }

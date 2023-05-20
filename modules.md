@@ -24,3 +24,18 @@ Para ver os demais modos de busca e ler com mais detalhes os explicados aqui, vo
     - fetchColumn
     - fetchAll
 - Os diferentes Fetch Modes do PHP, ou seja, as diferentes formas de trazer dados do banco para o PHP
+
+Bancos de dados possuem diversas formas de representar números que nós conhecemos como decimais. FLOAT, DECIMAL, NUMERIC, etc. Cada banco pode chamar de uma forma e até ter mais de uma representação.
+
+Para não lidar com essas particularidades, o PHP simplesmente recomenda que você envie os dados como string (PDO::PARAM_STR), que é o tipo padrão, e o banco tratará esses tipos.
+
+Inclusive é muito comum receber números decimais do banco e tê-los representados como strings no PHP. Isso não é nenhum problema e é um comportamento replicado em diversas linguagens.
+
+Trabalhar com números decimais é um problema conhecido da computação, então acho que vale citar esse material bem legal: What Every Programmer Should Know About Floating-Point Arithmetic or Why don’t my numbers add up?.
+
+O que é SQL Injection e como realizar esse ataque em nossa aplicação
+Que adicionar parâmetros na string SQL é perigoso
+A resolver esse problema, utilizando Prepared Statements
+Que prepared statements podem inclusive ajudar na performance da aplicação
+As diferenças entre bindValue e bindParam para vincular parâmetros aos prepared statements
+Que podemos informar o tipo de dado que estamos passando através do PDO, utilizando o terceiro parâmetro de bindValue e bindParam
